@@ -1,3 +1,4 @@
+import { right } from "@popperjs/core";
 import "../style/index.css";
 
 /**
@@ -39,7 +40,7 @@ function render(variables = {}) {
           <h3>${variables.city ? variables.city : "city"}, ${
     variables.country ? variables.country : "country"
   }</h3>
-          <ul class="position-right">
+          <ul class = ${variables.socialMediaPosition}> 
             <li><a href="https://twitter.com/${
               variables.twitter
             }"><i class="fab fa-twitter"></i></a></li>
